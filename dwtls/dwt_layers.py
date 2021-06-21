@@ -1,3 +1,6 @@
+"""Library of discrete wavelet transform layers using fixed and trainable wavelets
+"""
+
 import numpy
 import torch
 import torch.nn as nn
@@ -6,8 +9,7 @@ import torch.nn.functional as F
 class DWT(nn.Module):
     '''Discrete wavelet transform layer using fixed wavelet
 
-    Referenes:
-        [1] Tomohiko Nakamura, Shihori Kozuka, and Hiroshi Saruwatari, “Time-Domain Audio Source Separation with Neural Networks Based on Multiresolution Analysis,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 29, pp. 1687–1701, Apr. 2021.
+    This layer uses discrete wavelet transform (DWT) for downsampling. It enables us to downsample features without losing their entire information and causing aliasing in the feature domain.
 
     Attributes:
         wavelet (str): Wavelet type [lazy, haar, cdf22, cdf26, cdf15, dd4]
@@ -17,6 +19,9 @@ class DWT(nn.Module):
         u_weight (torch.Tensor): Update weight
         u_params (dict): Convolution parameters for the update step
         scaling_factor (torch.Tensor): Scaling factor
+
+    Referenes:
+        [1] Tomohiko Nakamura, Shihori Kozuka, and Hiroshi Saruwatari, “Time-Domain Audio Source Separation with Neural Networks Based on Multiresolution Analysis,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 29, pp. 1687–1701, Apr. 2021.
     '''
     def __init__(self, wavelet="haar"):
         '''

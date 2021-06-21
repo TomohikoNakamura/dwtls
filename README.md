@@ -7,7 +7,7 @@
 The use of DWT has an anti-aliasing filter and the perferct reconstruction property, at least either of which is lacked in conventional pooling layers.
 The two properties enables the DWT layers to propagate entire information of an input feature.
 The library includes
-- DWT layers with Haar, CDF22, CDF26, CDF15, and DD4 wavelets,
+- DWT layers with fixed wavelets (Haar, CDF22, CDF26, CDF15, and DD4 wavelets),
 - trainable DWT layers,
 - and weight-normalized trainable DWT layers.
 The library works with Python>=3.6 and pytorch>=1.0.
@@ -22,6 +22,10 @@ or
 git clone git@github.com:TomohikoNakamura/dwtls.git
 pip install -e dwtls
 ```
+
+## How to use
+All DWT layers are implemented as subclasses of `torch.nn.Module` of PyTorch, so we can use them in many DNNs, using PyTorch scripts.
+We prepare [a short tutorial notebook](tutorial.ipynb), which makes it easy to use our DWT layers in your codes.
 
 ## Citation
 If you use `dwtls` in your work, please cite:

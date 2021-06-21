@@ -1,6 +1,6 @@
 # dwtls: Discrete Wavelet Transform LayerS
 
-[**Paper**](https://doi.org/10.1109/TASLP.2020.3037487)
+[**Paper**](https://doi.org/10.1109/TASLP.2021.3072496)
 | [**Demo**](https://tomohikonakamura.github.io/Tomohiko-Nakamura/demo/HTFD/)
 
 `dwtls` is a downsampling/pooling layer library of discrete wavelet transform (DWT) layers with fixed and trainable wavelets presented in [1].

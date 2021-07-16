@@ -11,7 +11,7 @@ The library includes
 - DWT layers with fixed wavelets (Haar, CDF22, CDF26, CDF15, and DD4 wavelets),
 - trainable DWT layers,
 - and weight-normalized trainable DWT layers.
-The library works with Python>=3.6 and pytorch>=1.0.
+The library works with Python>=3.7 and pytorch>=1.0.
 
 ## Installation
 `dwtls` can be installed with:

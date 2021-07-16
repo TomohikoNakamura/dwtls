@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (c) Tomohiko Nakamura
 
-from setuptools import setup
+from setuptools import setup, find_packages
 from pathlib import Path
 
 requirements = []
@@ -14,15 +14,16 @@ with open(Path(f"requirements.txt"), "r", encoding="utf-8") as fp:
 setup(
     name="dwtls",
     version="1.0.0",
+    url="https://github.com/TomohikoNakamura/dwtls",
+    author="Tomohiko Nakamura",
+    author_email="tomohiko.nakamura.jp@ieee.org",
     description="A library of trainable/fixed discrete wavelet transform layers",
     long_description=open("README.md", "rb").read().decode("utf-8"),
     long_description_content_type="text/markdown",
-    author="Tomohiko Nakamura",
-    url="https://github.com/TomohikoNakamura/dwtls",
-    author_email="tomohiko.nakamura.jp@ieee.org",
     license="MIT",
+    packages=find_packages(),
     install_requires=requirements,
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     classifiers=[
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",

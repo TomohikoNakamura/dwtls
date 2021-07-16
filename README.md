@@ -7,10 +7,10 @@
 The use of DWT has an anti-aliasing filter and the perferct reconstruction property, at least either of which is lacked in conventional pooling layers.
 The two properties enables the DWT layers to propagate entire information of an input feature.  
 
-The library includes
-- DWT layers with fixed wavelets (Haar, CDF22, CDF26, CDF15, and DD4 wavelets),
-- trainable DWT layers,
-- and weight-normalized trainable DWT layers.
+The library includes the following layers.
+- DWT layers with fixed wavelets (e.g., Haar, CDF22, CDF26, CDF15, and DD4 wavelets)
+- DWT layers with trainable wavelets (trainable DWT layers)
+- Weight-normalized trainable DWT layers
 The library works with Python>=3.7 and pytorch>=1.0.
 
 ## Installation

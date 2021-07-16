@@ -14,7 +14,7 @@ with open(Path(f"requirements.txt"), "r", encoding="utf-8") as fp:
 
 setup(
     name="dwtls",
-    version="1.0.0",
+    version="1.0.2",
     url="https://github.com/TomohikoNakamura/dwtls",
     author="Tomohiko Nakamura",
     author_email="tomohiko.nakamura.jp@ieee.org",

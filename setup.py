@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) Tomohiko Nakamura
+# All rights reserved.
 
 from setuptools import setup, find_packages
 from pathlib import Path
@@ -17,7 +18,7 @@ setup(
     url="https://github.com/TomohikoNakamura/dwtls",
     author="Tomohiko Nakamura",
     author_email="tomohiko.nakamura.jp@ieee.org",
-    description="A library of trainable/fixed discrete wavelet transform layers",
+    description="A library of trainable and fixed discrete wavelet transform layers",
     long_description=open("README.md", "rb").read().decode("utf-8"),
     long_description_content_type="text/markdown",
     license="MIT",

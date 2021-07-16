@@ -1,3 +1,5 @@
+# Copyright (c) Tomohiko Nakamura
+# All rights reserved.
 """Library of discrete wavelet transform layers using fixed and trainable wavelets
 """
 

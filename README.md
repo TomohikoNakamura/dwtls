@@ -26,8 +26,8 @@ pip install -e dwtls
 
 ## How to use
 All DWT layers are implemented as subclasses of `torch.nn.Module` of PyTorch, so we can use them in many DNNs, using PyTorch scripts.
-We prepare [a short tutorial notebook](tutorial.ipynb), which makes it easy to use our DWT layers in your codes.  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TomohikoNakamura/dwtls/blob/master/tutorial.ipynb)
+We prepare [a short tutorial notebook](examples/tutorial.ipynb), which makes it easy to use our DWT layers in your codes.  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TomohikoNakamura/dwtls/blob/master/examples/tutorial.ipynb)
 
 ## Citation
 If you use `dwtls` in your work, please cite:
